@@ -2,27 +2,26 @@
 @use "../../typo.scss";
 
 .nav__container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-background-color: var(--indigo)
+  width: 100vw;
+  background-color: var(--indigo);
+  padding: 1rem;
 }
 
 .top__nav {
-    margin: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .burger {
-    display: inline-block;
     cursor: pointer;
   }
-
-  
 
 .burger div {
     background-color: var(--white);
     width: 40px;
-    height: 8px;
+    height: 7px;
     margin: 10px;
     border-radius: 50px 50px 50px 0px;
     transition: all 0.3s ease;
@@ -50,3 +49,11 @@ background-color: var(--indigo)
       text-decoration: none;
       color: var(--white)
   }
+
+
+  //---------------LOGO//---------------//
+
+.logo img {
+    height: auto;
+    width: 60vw;
+}

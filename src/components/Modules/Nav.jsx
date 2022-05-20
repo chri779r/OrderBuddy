@@ -1,11 +1,16 @@
 import "./Nav.scss"
+import logo from "../../assets/logo.svg"
 
 export default function Navigation() {
     return (
         <>
         <div className="nav__container">
           <nav className="top__nav">
-              <a href="" className="logo">OrderBuddy</a>
+              <a href="" className="logo"><img src={logo} alt="OrderBuddy" /></a>
+              <div className="burger">
+                <div className="burger__line1"></div>    
+                <div className="burger__line2"></div>    
+              </div>
               <ul class="nav__list">
                   <li>
                     <a href="" class="nav__link">Hjem</a>
@@ -24,10 +29,6 @@ export default function Navigation() {
                   </li>
                 </ul>
           </nav>
-          <div className="burger">
-              <div className="burger__line1"></div>    
-              <div className="burger__line2"></div>    
-          </div>
         </div> 
         </>
     )
