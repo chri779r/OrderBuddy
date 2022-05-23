@@ -1,4 +1,5 @@
 import React from "react";
+import "./navLinks.scss"
 
 export function NavLinks(props) {
   return (

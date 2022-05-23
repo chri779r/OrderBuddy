@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuToggle } from "./menuToggle";
+import "./mobileNavLinks.scss"
 
 
 
@@ -12,7 +13,7 @@ export function MobileNavLinks(props) {
     <div className="links__container">
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
       {isOpen && (
-        <ul className="link__list">
+        <ul className="links__list">
           <li className="link__item"><a href="#">Hjem</a></li>
           <li className="link__item"><a href="#">Hvordan</a></li>
           <li className="link__item"><a href="#">Find os</a></li>

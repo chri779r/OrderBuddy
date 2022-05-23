@@ -12,7 +12,7 @@ export function Navigation(props) {
 
   return (
     <section className="topNav__container">
-        <div className="logo__container">
+        <div className="logo">
             <Logo />
         </div>
         <div className="navigation__container">

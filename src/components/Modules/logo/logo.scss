@@ -1,11 +1,10 @@
-
-.Logo__container {
+.logo__container {
     display: flex;
     align-items: center;
 
     .logo__img {
-        width: 29px;
-        height: 29px;
+        width: auto;
+        height: 30px;
 
         img {
             width: 100%;
