@@ -1,0 +1,15 @@
+
+.Logo__container {
+    display: flex;
+    align-items: center;
+
+    .logo__img {
+        width: 29px;
+        height: 29px;
+
+        img {
+            width: 100%;
+            height: 100%;
+          }
+    }
+}

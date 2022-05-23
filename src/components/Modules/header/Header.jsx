@@ -1,5 +1,5 @@
-import "./Header.scss"
-import Navigation from "../nav/Nav"
+import "./header.scss"
+import {Navigation} from "../nav/nav"
 
 export default function Header() {
     return (
