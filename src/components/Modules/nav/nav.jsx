@@ -7,7 +7,7 @@ import { DeviceSize } from "../responsive";
 import { MobileNavLinks } from "./mobileNavLinks";
 
 
-export default function Navigation(props) {
+export function Navigation(props) {
   const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
 
   return (
