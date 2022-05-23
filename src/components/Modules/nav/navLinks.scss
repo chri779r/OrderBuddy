@@ -1,35 +1,25 @@
 .links__container{
-    height: 100%;
     display: flex;
     align-items: center;
 
-    .link__list {
-        margin: 0;
-        padding: 0;
+    .links__list {
         display: flex;
+        flex-wrap: wrap;
+        align-items: center;
         height: 100%;
         list-style: none;
 
         .link__item {
-            height: 100%;
-            padding: 0 1.1em;
-            color: var(--white);
-            font-weight: 500;
-            font-size: 14px;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            border-top: 2px solid transparent;
-            transition: all 220ms ease-in-out;
+            padding: 1rem;
             
             &:hover {
-                border-top: 2px solid var(--darkGreen);
+                
               }
             
             a {
-                  text-decoration: none;
-                  color: inherit;
-                  font-size: inherit;
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                color: var(--white);
               }
         }
 
