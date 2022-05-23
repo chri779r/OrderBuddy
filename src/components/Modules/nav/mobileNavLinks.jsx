@@ -8,10 +8,11 @@ export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    
-
+  <>
     <div className="links__container">
       <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
+    </div>
+    <div className="links__list--mobile">
       {isOpen && (
         <ul className="links__list">
           <li className="link__item"><a href="#">Hjem</a></li>
@@ -22,5 +23,6 @@ export function MobileNavLinks(props) {
         </ul>
       )}
     </div>
+  </>
   );
 }
