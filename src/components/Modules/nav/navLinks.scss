@@ -10,20 +10,17 @@
         list-style: none;
 
         .link__item {
-            padding: 1rem;
-            
-            // &:hover {
-                
-            //   }
+            padding: 1rem 1.5rem;
             
             a {
                 text-decoration: none;
                 font-family: 'Roboto', sans-serif;
-                color: var(--white);
-              }
+                color: var(--white);  
+            }
         }
     }
 }
+
 
 
 
