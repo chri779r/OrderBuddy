@@ -1,10 +1,8 @@
+import HeroWho from '../heroes/herowho'
+
 function OmosPage(){
     return(
-    <div className='omos_page'>
-
-<div>Om os</div>
-
-    </div>
+  <HeroWho/>
     
     )
 }

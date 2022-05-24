@@ -1,14 +1,8 @@
-
-//import React from 'react'
-
+import HeroHow from '../heroes/herohow'
 
 function HvordanPage(){
     return(
-    <div className='hvordan_page'>
-
-<div>Hvordan</div>
-
-    </div>
+        <HeroHow/>
     
     )
 }
