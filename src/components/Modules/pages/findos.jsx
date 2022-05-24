@@ -1,10 +1,8 @@
+import HeroFind from '../heroes/herofind'
+
 function FindPage(){
     return(
-    <div className='find_page'>
-      
-<div>Find os</div>
-   
-    </div>
+        <HeroFind/>
     
     )
 }
