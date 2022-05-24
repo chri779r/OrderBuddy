@@ -1,14 +1,9 @@
-//import React from 'react'
-
+import HeroMain from '../heroes/heromain'
 
 function HjemPage(){
     return(
-    <div className='hjem_page'>
-      
-            <H1>Hjem</H1>
-   
-    </div>
-    
+  
+  <HeroMain/>
     )
 }
 
