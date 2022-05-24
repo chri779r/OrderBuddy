@@ -6,6 +6,11 @@ import illuHow from "../../../assets/illu_how.svg"
 import illuKontakt from "../../../assets/illu_kontakt.svg"
 import illuSent from "../../../assets/illu_sent.svg"
 import illuWho from "../../../assets/illu_who.svg"
+import illuFaq from "../../../assets/illu_faq.svg"
+
+import illuHand from "../../../assets/hand.svg"
+
+
 import "./illustrations.scss"
 
 export function IlluFront(props) {
@@ -66,3 +71,26 @@ export function IlluWho(props) {
     </div>
   );
 }
+
+export function IlluFaq(props) {
+  return (
+    <div className="illu__container">
+        <figure className="illu__img">
+          <img src={illuFaq} alt="illustration FAQ OrderBuddy" />
+        </figure>
+    </div>
+  );
+}
+
+
+export function IlluHand(props) {
+  return (
+    <div className="illu_hand_container">
+        <figure className="illu_hand_img">
+          <img src={illuHand} alt="illustration hand OrderBuddy" />
+        </figure>
+    </div>
+  );
+}
+
+
