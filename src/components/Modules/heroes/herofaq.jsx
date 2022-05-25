@@ -10,7 +10,7 @@ const HeroFaq = () => {
             <HeroIlluContainer>
                 <IlluFaq/>
             </HeroIlluContainer>
-                <HeroContainer>
+            <HeroContainer>
                 <h2>Har du spørgsmål?</h2>  
                 <p>Vi har samlet de mest stillede spørgsmål, vi får herunder i en FAQ</p>
             </HeroContainer>

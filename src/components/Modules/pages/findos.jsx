@@ -1,9 +1,10 @@
-import HeroFind from '../heroes/herofind'
+import { FindHero } from "../heros2/heroFind"
 
 function FindPage(){
     return(
-        <HeroFind/>
-    
+        <>
+            <FindHero/>
+        </>
     )
 }
 
