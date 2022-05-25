@@ -1,3 +1,5 @@
+
+
 .footer{
     background-color: var(--indigo);;
     display: flex;
@@ -8,22 +10,22 @@
     gap: 2rem;
     color: var(--white);
     border-radius: 25px 25px 0px 0px;
-
-        .footer_container {
-            align-items: flex-start;
-            gap: 2rem;
-            display: flex;
-            flex-direction: column;
-            
+}
+ .footer_container {
+      align-items: flex-start;
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+  }
             .vigtige_links {
                 text-align: left;
                 gap: 1rem;
                 display: flex;
                 flex-direction: column;
-            
+            }
                 .footer_link_container{
                     line-height: 2rem;
-
+                }
                     .footer_link_item{
                         list-style: none;
                         a {
@@ -34,8 +36,8 @@
                                     
                         }  
                      }
-                 }
-            }
+                 
+           
     
             .kontakt{
                 text-align: left;
@@ -61,21 +63,21 @@
                       }
                
              }  
-        }
-}
+        
 
 
-@media (min-width: 1440px)  {
+
+@media (min-width: 1024px)  {
     .footer{
         height: 35vh;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
- 
+    }
         .footer_container {
             gap: 4rem;
             flex-direction: row;
-
+        }
                 .vigtige_links {
                     .footer_link_container{
                         .footer_link_item{
@@ -90,7 +92,7 @@
                         }
                     }
                 }
-      
+            }
                 .some_links{
                     align-items: flex-end;
                     
@@ -100,6 +102,5 @@
                     }
                 }
 
-          }
-    }
-}
+         
+   
