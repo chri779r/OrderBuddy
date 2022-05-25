@@ -12,3 +12,36 @@
           }
     }
 }
+
+
+.ikon__container {
+    display: flex;
+    padding: 2rem;
+
+    .ikon__img {
+        width: 15vw;
+        height: 15vh;
+    
+
+        img {
+            width: 100%;
+            height: 100%;
+          }
+    }
+}
+
+.ikon_how_container {
+    display: flex;
+    padding: 2rem;
+
+    .ikon_how_img {
+        width: 20vw;
+        height: 20vh;
+
+       
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
