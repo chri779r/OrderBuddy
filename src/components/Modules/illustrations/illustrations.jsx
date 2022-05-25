@@ -8,7 +8,8 @@ import illuSent from "../../../assets/illu_sent.svg"
 import illuWho from "../../../assets/illu_who.svg"
 import illuFaq from "../../../assets/illu_faq.svg"
 
-import illuHand from "../../../assets/hand.svg"
+
+
 
 
 import "./illustrations.scss"
@@ -83,14 +84,5 @@ export function IlluFaq(props) {
 }
 
 
-export function IlluHand(props) {
-  return (
-    <div className="illu_hand_container">
-        <figure className="illu_hand_img">
-          <img src={illuHand} alt="illustration hand OrderBuddy" />
-        </figure>
-    </div>
-  );
-}
 
 
