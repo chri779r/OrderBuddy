@@ -1,9 +1,12 @@
 import "./Footer.scss"
+
+
 import { NavLink } from 'react-router-dom'
 import { Logo } from "../logo/logo"
 import { Facebook } from "../icons/icons"
 import { Instagram } from "../icons/icons"
 import { Linkedin } from "../icons/icons"
+
 
 export default function Footer() {
     return (
