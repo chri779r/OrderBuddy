@@ -1,10 +1,8 @@
 import HeroWho from '../heroes/herowho'
 
-function OmosPage(){
+export default function OmosPage(){
     return(
   <HeroWho/>
     
     )
 }
-
-export default OmosPage
