@@ -14,7 +14,7 @@ export default function Footer() {
     <ul className="footer_link_container">
          <li className="footer_link_item"><NavLink to="/omos">Om os</NavLink></li>
          <li className="footer_link_item"><NavLink to="/find">Find os</NavLink></li>
-         <li className="footer_link_item"><a href="#">FAQ</a></li>
+         <li className="footer_link_item"><NavLink to="/find">FAQ</NavLink></li>
          <li className="footer_link_item"><NavLink to="/kontakt">Kontakt</NavLink></li>
      </ul>
        </div>
