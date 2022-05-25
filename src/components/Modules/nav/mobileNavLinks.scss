@@ -4,8 +4,8 @@
     position: fixed;
     top: 60px;
     left: 0;
-    height: 100%;
     width: 100%;
+    z-index: 80;
 
     .links__list {
         display: flex;
@@ -13,6 +13,7 @@
         width: 100%;
         height: 100%;
         background-color: var(--indigo);
+        border-radius: 0 0 25px 25px;
 
         .link__item{
             text-decoration: none;

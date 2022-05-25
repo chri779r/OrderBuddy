@@ -1,15 +1,14 @@
-import HeroHow from '../heroes/herohow'
+import { HowHero } from '../heros2/heroHow'
 import HeroFaq from '../heroes/herofaq'
 import IconsHow from '../icons/iconshow'
 
 function HvordanPage(){
     return(
-      <div>
-        <HeroHow/>
+      <>
+        <HowHero/>
         <IconsHow/>
         <HeroFaq/>
-   
-        </div>
+        </>
     )
 }
 

@@ -1,8 +1,11 @@
-import HeroKontakt from '../heroes/herokontakt'
+import React from "react"
+import { ContactHero } from "../heros2/heroContact"
 
 function KontaktPage(){
     return(
-  <HeroKontakt/>
+      <>
+        <ContactHero/>
+      </>
     
     )
 }
