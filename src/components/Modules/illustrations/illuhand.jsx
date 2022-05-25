@@ -1,62 +1,72 @@
 import React from "react"
 import styled from 'styled-components'
 
-import { IlluHand } from '../illustrations/illustrations'
+
 
 const ItemWrapper = styled.div`
 display: flex;
-flex-wrap: nowrap;
-justify-content: flex-end;
-align-items: center;
-align-content: center;
-flex-direction: row-reverse;
+background-image: url(./src/assets/hand.svg);
+background-position: right;
+background-size: 80vw 130vh;
+width: 100vw;
+height: 87vh;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 
 `
 const TextWrapper = styled.div`
 display: flex;
 flex-direction: column;
 gap:2rem;
- align-items: center;
+align-items: center;
+justify-content: flex-start;
+height: fit-content;
 
 `
 const TextContainer = styled.div`
-width: 30vw;
-height: 9vh;
 background-color: var(--darkGreen);
+width:34vw;
+height: 10vh;
 display: flex;
 align-items: center;
+justify-content: center;
 text-align: left;
-border-radius: 10% 10% 10% 0%;
+border-radius: 10px 10px 10px 0%;
+`
+const Text = styled.p`
+ padding:0.5rem;
+
 `
 
-const IlluWrapper = styled.div`
-// margin-top: -20vh;
 
-`
+
 
 const IllustrationHand = () => {
     return(
 
-    <ItemWrapper>
-           <IlluWrapper>
-    <IlluHand/>
-    </IlluWrapper>
-    <TextWrapper>
-    <TextContainer>
-        <p>Nem bestilling og betaling</p>
-    </TextContainer>
 
-    <TextContainer>
-<p>Ingen oprettelse</p>
-    </TextContainer>
+        <ItemWrapper>
+            <TextWrapper>
 
-    <TextContainer>
-<p>Miljøvenlig</p>
-    </TextContainer>
-    </TextWrapper>
+            <TextContainer>
+                <Text>Nem bestilling og betaling</Text>
+            </TextContainer>
 
+            <TextContainer>
+                <Text>Ingen oprettelse</Text>
+            </TextContainer>
+
+            <TextContainer>
+                <Text>Miljøvenlig</Text>
+            </TextContainer>
+
+            </TextWrapper>
+        </ItemWrapper>
  
-    </ItemWrapper>
  
     )
 }
