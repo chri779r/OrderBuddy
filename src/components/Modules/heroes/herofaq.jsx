@@ -6,15 +6,15 @@ import HeroContainer from "./styledCont"
 
 const HeroFaq = () => {
     return(
-<StyledHero>
-    <HeroIlluContainer>
-        <IlluFaq/>
-    </HeroIlluContainer>
-        <HeroContainer>
-        <h2>Har du spørgsmål?</h2>  
-        <p>Vi har samlet de mest stillede spørgsmål, vi får herunder i en FAQ</p>
-    </HeroContainer>
-</StyledHero>
+        <StyledHero>
+            <HeroIlluContainer>
+                <IlluFaq/>
+            </HeroIlluContainer>
+                <HeroContainer>
+                <h2>Har du spørgsmål?</h2>  
+                <p>Vi har samlet de mest stillede spørgsmål, vi får herunder i en FAQ</p>
+            </HeroContainer>
+        </StyledHero>
           
     )
 }

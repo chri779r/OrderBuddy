@@ -15,8 +15,8 @@ export function MobileNavLinks(props) {
         <ul className="links__list">
           <li className="link__item"><Link to="/">Hjem</Link></li>
           <li className="link__item"><Link to="/hvordan">Hvordan</Link></li>
-          <li className="link__item"><Link to="/find-os">Find os</Link></li>
-          <li className="link__item"><Link to="/om-os">Om os</Link></li>
+          <li className="link__item"><Link to="/find">Find os</Link></li>
+          <li className="link__item"><Link to="/omos">Om os</Link></li>
           <li className="link__item"><Link to="/kontakt">Kontakt</Link></li>
         </ul>
       )}
