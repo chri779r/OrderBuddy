@@ -1,6 +1,5 @@
 import React from "react"
 import { IlluFind } from '../illustrations/illustrations'
-
 import StyledHero from "./styledhero"
 import HeroIlluContainer from "./styledilluCont" 
 import HeroContainer from "./styledCont"
