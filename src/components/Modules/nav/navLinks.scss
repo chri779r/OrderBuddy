@@ -13,14 +13,43 @@
             padding: 1rem;
             
             a {
+                position: relative;
                 text-decoration: none;
                 font-family: 'Roboto', sans-serif;
-                color: var(--white);  
+                color: var(--white);
+                
+                &:after {
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    background-color: var(--lightGreen);
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 0.5s ease;
+
+                }
+
+                &:hover {
+                    &:after {
+                        transform-origin: left;
+                        transform: scaleX(1);
+                    }
+                }
+
+                &:active {
+                    &::after {
+                        background-color: var(--darkGreen);
+                    }
+                }
             }
         }
-        
     }
 }
+
+
 
 
 

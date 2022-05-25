@@ -1,6 +1,6 @@
 import React from "react";
-import "./navLinks.scss"
-import { NavLink } from 'react-router-dom'
+import "./navLinks.scss";
+import { NavLink } from 'react-router-dom';
 
 export function NavLinks(props) {
   return (
