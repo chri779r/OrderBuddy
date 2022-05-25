@@ -18,3 +18,20 @@
           }
     }
 }
+
+.illu_hand_container {
+    display: flex;
+    justify-content: flex-end;
+    object-fit: cover;
+
+    .illu_hand_img{
+        width: auto ;
+        height: 60vh;
+    
+   
+        img {
+            width: 100%;
+            height: 100%;
+          }
+    }
+}
