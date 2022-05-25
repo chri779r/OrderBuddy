@@ -7,15 +7,15 @@ import HeroContainer from "./styledCont"
 
 const HeroKontakt = () => {
     return(
-<StyledHero>
-<HeroIlluContainer>
-    <IlluKontakt/>
-</HeroIlluContainer>
-    <HeroContainer>
-    <h2>Kontakt os</h2>
-    <p>Tag endelig fat i os</p>
-</HeroContainer>
-</StyledHero>
+        <StyledHero>
+            <HeroIlluContainer>
+                <IlluKontakt/>
+            </HeroIlluContainer>
+            <HeroContainer>
+                <h2>Kontakt os</h2>
+                <p>Tag endelig fat i os</p>
+            </HeroContainer>
+        </StyledHero>
           
     )
 }
