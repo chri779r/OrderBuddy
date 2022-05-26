@@ -13,8 +13,10 @@ import facebook from "../../../assets/facebook.svg"
   import ikonQr from "../../../assets/qr.svg"
   import ikonKortHow from "../../../assets/korthow.svg"
   import ikonEye from "../../../assets/eye.svg"
+  
+  import iconBtnFaq from "../../../assets/pile.svg"
 
-import "./icons.scss"
+  import "./icons.scss"
 
 export function Facebook(props) {
   return (
@@ -115,3 +117,5 @@ export function IkonEye(props) {
     </div>
   );
 }
+
+
