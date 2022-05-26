@@ -69,10 +69,11 @@
 
 @media (min-width: 1024px)  {
     .footer{
-        height: 35vh;
+        height: fit-content;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
+        padding-top: 2rem;
     }
         .footer_container {
             gap: 4rem;
