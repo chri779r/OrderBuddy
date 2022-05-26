@@ -1,6 +1,7 @@
 .card__wrapper {
     display: flex;
-
+    // margin: 1rem 0;
+    justify-content: center;
 
     .card__container {
         display: flex;
@@ -8,14 +9,16 @@
         align-items: center;
         max-width: 80%;
         margin: 0 auto;
+        padding: 1rem 0;
     
         .card__header {
             text-align: left;
-            margin: 1rem 0;
+            margin-bottom: 1rem;
         }
     
         .card__text {
             text-align: left;
+            padding: 1rem 0;
         }
     }
     
