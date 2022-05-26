@@ -4,16 +4,13 @@
     padding: 1em 2em;
     margin: 1em 0;
     font-family: "roboto", san-serif;
-    font-size: 1em;
+    font-size: 1em !important;
     background-color: var(--lilac);
     color: var(--white);
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .5s ease;
+    border: transparent;
+    border-radius: 15px 15px 15px 0;
 
-    &:hover {
+    &:hover{
         background-color: var(--indigo);
-        transform-origin: left;
-        transform: scaleX(1);
     }
 }
