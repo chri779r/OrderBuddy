@@ -30,10 +30,8 @@ margin: 0.5rem 0.8rem;
 background-size: cover;
 // transition: transform .5s ease;
 &:hover{
-   
     transform-origin: center;
     transform: rotate(180deg);
-    
 }
 
 `;
@@ -52,11 +50,7 @@ export default class Toggle extends Component {
       on: false,
     }
 
-    Question = {
-        qesOne: "Hvordan",
-        qesTwo: "Hvilken",
-    }
-       
+
     toggle = () => {
         this.setState({
             on: !this.state.on
