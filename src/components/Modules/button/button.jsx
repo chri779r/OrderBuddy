@@ -25,10 +25,6 @@ const Btn = styled.button`
 export function Button() {
 
     return(
-<<<<<<< HEAD
         <Btn/>
-=======
-        <Btn></Btn>
->>>>>>> main
     )
 }
