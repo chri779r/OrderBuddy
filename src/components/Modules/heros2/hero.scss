@@ -1,9 +1,9 @@
 .hero__container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     max-width: 100%;
-    padding: 5rem 0;
+    padding: 5rem 0 2rem 0;
     background-color: var(--champagne);
 
     .hero__figure img {
@@ -14,7 +14,10 @@
     .hero__info{
         display: flex;
         flex-direction: column;
+        text-align: center;
         text-align: left;
-        padding: 0 2rem;
+        max-width: 65%;
+        margin: 0 auto;
+        color: var(--indigo);
     }
 }
