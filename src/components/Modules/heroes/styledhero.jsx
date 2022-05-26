@@ -7,6 +7,7 @@ justify-content: center;
 align-items: center;
 background-color: var(--champagne);
 width: 100vw;
+
 `
 
 export default StyledHero
