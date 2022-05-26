@@ -1,7 +1,4 @@
-import React from "react";
-import styled from "styled-components";
-
-const Btn = styled.button`
+.btn {
     height: 3em;
     width: auto;
     padding: 1em 2em;
@@ -13,17 +10,10 @@ const Btn = styled.button`
     transform: scaleX(0);
     transform-origin: right;
     transition: transform .5s ease;
+
     &:hover {
         background-color: var(--indigo);
         transform-origin: left;
         transform: scaleX(1);
     }
-`;
-
-
-export function Button() {
-
-    return(
-        <Btn/>
-    )
 }
