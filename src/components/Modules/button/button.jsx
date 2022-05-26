@@ -11,9 +11,9 @@ const Btn = styled.button`
 `;
 
 
-export function Btn() {
+export function Button() {
 
     return(
-        <Button></Button>
+        <Btn/>
     )
 }
