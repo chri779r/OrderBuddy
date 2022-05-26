@@ -1,8 +1,7 @@
 import { HowHero } from '../heros2/heroHow'
 import HeroFaq from '../heroes/herofaq'
 import IconsHow from '../icons/iconshow'
-
-import CardFaq from '../cards/faq_card'
+import FaqCard from '../cards/faqCard'
 
 function HvordanPage(){
     return(
@@ -10,9 +9,7 @@ function HvordanPage(){
         <HowHero/>
         <IconsHow/>
         <HeroFaq/>
-
-        <CardFaq/>
-  
+        <FaqCard/>
         </>
 
     )
