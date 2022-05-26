@@ -1,25 +1,23 @@
-import React from "react";
-import "./cards.scss"
+// import React from "react";
+// import "./cards.scss"
 
-const CardHeader = styled.h3`
-    
-`;
+// export default function Card() {
+//     function CardHeader(){
+//         return(
+//             <h3></h3>
+//         )
+//     }
+//     function CardText(){
+//         return(
+//             <p></p>
+//         )
+//     }
 
-export function CardHeader() {
 
-    return(
-        <h3></h3>
-    )
-}
-
-
-const CardText = styled.p`
-    
-`;
-
-export function CardText() {
-
-    return(
-        <p></p>
-    )
-}
+//     return(
+//         <>
+//             <CardHeader/>
+//             <CardText/>
+//         </>
+//     )
+// }

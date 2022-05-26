@@ -1,0 +1,16 @@
+.btn {
+    height: 3em;
+    width: auto;
+    padding: 1em 2em;
+    margin: 1em 0;
+    font-family: "roboto", san-serif;
+    font-size: 1em !important;
+    background-color: var(--lilac);
+    color: var(--white);
+    border: transparent;
+    border-radius: 15px 15px 15px 0;
+
+    &:hover{
+        background-color: var(--indigo);
+    }
+}

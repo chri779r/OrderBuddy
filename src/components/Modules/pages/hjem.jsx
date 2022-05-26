@@ -1,15 +1,17 @@
-import HeroMain from '../heroes/heromain'
 import IconMain from '../icons/iconsmain'
 import IllustrationHand from '../illustrations/illuhand.jsx'
+import { HeroHome } from '../heros2/heroHome'
+import HjemCard from '../cards/hjemCard'
 
-function HjemPage(){
-    return(
-  <div>
-  <HeroMain/>
-  <IconMain/>
-  <IllustrationHand/>
-  </div>
-    )
+
+export default function HjemPage(){
+
+  return(
+  <>
+    <HeroHome/>
+    <IconMain/>
+    <IllustrationHand/>
+    <HjemCard/>
+  </>
+  )
 }
-
-export default HjemPage
