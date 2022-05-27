@@ -20,13 +20,18 @@ import "./partners.scss"
 
         return (
             <>
-            {partners.map((partner, i) =>
-            <div key={i}>
-                <h3>{partner.name}</h3>
-                <h1>{partner.type}</h1>
-                <img src={`/src/assets/${partner.name}.png`} alt="partner logo" />
-            </div>
-        )}
+            <section className="partner__wrapper">
+                <h3>Vores partnere</h3>
+                <div className="partner__container">
+                {partners.map((partner, i) =>
+                <div key={i} className="partner__card">
+                    {/* <h3>{partner.name}</h3>
+                    <h1>{partner.type}</h1> */}
+                    <img src={`/src/assets/${partner.name}.png`} alt="partner logo" />
+                </div>
+                )}
+                </div>
+            </section>
             </>
         )
     }
