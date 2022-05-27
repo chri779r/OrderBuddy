@@ -82,7 +82,7 @@ function useTouchedFields() {
             id="tel" 
             name="tel" 
             type="tel" 
-            pattern="[0-9]"
+            pattern="[0-9]{8}"
                           
             {...bindField("tel")}
             required 

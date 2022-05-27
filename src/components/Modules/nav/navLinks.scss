@@ -39,9 +39,11 @@
                     }
                 }
 
-                &:active {
+                &:active, &.active {
                     &::after {
                         background-color: var(--darkGreen);
+                        transform-origin: left;
+                        transform: scaleX(1);
                     }
                 }
             }
