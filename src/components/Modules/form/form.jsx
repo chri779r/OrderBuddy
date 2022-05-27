@@ -1,7 +1,7 @@
-import React from "react"
+import React, { Fragment } from "react";
 import './form.scss'
 import '../button/button.scss'
-
+import {Popup} from './popup'
 
 const { useState } = React
 
@@ -17,28 +17,37 @@ function useTouchedFields() {
     }
     
     const setAllFieldsTouched = (event) => {
-      setTouchedFields({ all: true })
+      setTouchedFields({ all: true }) 
     }
     
     const bindField = (fieldName) => ({
       "data-touched": touchedFields.all || touchedFields[fieldName],
       onBlur: setFieldTouched,   
     })
-    
-    return [bindField, setAllFieldsTouched]
+
+    // function showPopup() {
+    //     if( setTouchedFields({ all: true })  ){
+            
+    //     } 
+        
+    // }
+    return [bindField, setAllFieldsTouched, ]
   }
   
   const ContactForm = () => {
     const [bindField, setAllFieldsTouched] = useTouchedFields()
 
+    const [visiblePopup, setVisiblePopup] = React.useState(false);
     
     return (
+        <Fragment>
       <form className="container"
         onSubmit = {(event) => {
           event.preventDefault()
           const formData = new FormData(event.target)
           const data = Object.fromEntries(formData.entries())
           console.log(data) 
+          setVisiblePopup( !visiblePopup)
         }}
       >
         <fieldset>
@@ -96,8 +105,27 @@ function useTouchedFields() {
         <button className="btn" onClick={() => setAllFieldsTouched()} type="submit">
           Send besked
         </button>
+        {visiblePopup && (
+        <div>
+          <div
+            onClick={() => setVisiblePopup(false) & window.location.reload(false)}
+            className="popup-overlay"
+
+          ></div>
+          <div className="popup">
+        
+            <button
+              onClick={() => setVisiblePopup(false) & window.location.reload(false)}
+              className="close-popup"
+            ></button>
+            <div className="popup__content"> <Popup/></div>
+          </div>
+        </div>
+          )}
+        
       </form>
+      </Fragment>
     )
-  }
-  
-  export default ContactForm
+   
+    }
+        export default ContactForm
