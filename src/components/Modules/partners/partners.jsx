@@ -35,39 +35,3 @@ import "./partners.scss"
             </>
         )
     }
-
-
-// export default function FetchData(){
-//     loadJSON(`https://https://cwmunch.dk/kea/eksamen/partner.json`);
-//     const Partner = {
-//         name: "",
-//         imageDir: "",
-//     }
-
-//     async function loadJSON(url, callback) {
-//         const JSONData = await fetch(url);
-//         const partners = await JSONData.json()
-
-//         callback(partners);
-//         prepPartners(JSONData);
-//     } 
-
-//     function prepPartners(JSONData) {
-//         allPartners = JSONData.map(prepEachPartner);    
-//     }
-
-//     function prepEachPartner(jsonObject) {
-//         const partner = Object.create(Partner);
-
-//         const name = jsonObject.name;
-
-//         partner.imageDir = `../../../assets/`${partner.name}.png`;
-//     }
-
-
-//     return(
-//         <>
-        
-//         </>
-//     )
-// }

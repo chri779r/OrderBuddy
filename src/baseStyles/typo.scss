@@ -5,37 +5,27 @@ h1, h2, h3, h4,label{
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 h1 {
     font-size: 3rem;
     letter-spacing: 1%;
     font-weight: 700;
 }
 
-
-
-h2 {
-    font-size: 2.4rem;
+ h2{
+    font-size: 2rem;
     font-weight: 500;
 }
-
-
 
 h3 {
     font-size: 1.6rem;
     font-weight: 500;
 }
 
-
-
 h4, label{
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 1%;
 }
-
-
 
 p {
     font-family: 'Roboto', sans-serif;
@@ -44,35 +34,21 @@ p {
     letter-spacing: .02rem;
 }
 
-
-
 a {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
-
-
 
 .btn{
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
 }
 
-
-
 @media screen and (min-width: 1024px) {
 
-    h1{
-        font-size: 6rem;
+    h1, h2{
+        font-size: 3.5rem;
     }
-
-
-
-    h2{
-        font-size: 4rem;
-    }
-
-
 
     h3{
         font-size: 2.4rem;
