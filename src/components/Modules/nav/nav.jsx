@@ -8,7 +8,7 @@ import { MobileNavLinks } from "./mobileNavLinks";
 
 
 export function Navigation(props) {
-  const isMobile = useMediaQuery({ maxWidth: DeviceSize.mobile });
+  const isMobile = useMediaQuery({ maxWidth: DeviceSize.tablet });
 
   return (
     <section className="topNav__container">
