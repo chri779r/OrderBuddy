@@ -17,3 +17,17 @@
     font-family: "poppins", sans-serif !important;
     font-size: 1rem !important;
 }
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+    flex-direction: row-reverse;
+    gap:1rem;
+    width: 105%;
+}
+.css-i4bv87-MuiSvgIcon-root {
+    color: transparent !important;
+    width: 0.6em !important;
+    height: 0.8em !important;
+    background-image: url(../../../assets/pile.svg);
+    background-size: cover;
+    transform: rotate(180deg);
+    
+}
