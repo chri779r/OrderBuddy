@@ -13,11 +13,11 @@ export function MobileNavLinks(props) {
       <div className="links__list--mobile">
       {isOpen && (
         <ul className="links__list">
-          <li className="link__item"><Link to="/">Hjem</Link></li>
-          <li className="link__item"><Link to="/hvordan">Hvordan</Link></li>
-          <li className="link__item"><Link to="/find">Find os</Link></li>
-          <li className="link__item"><Link to="/omos">Om os</Link></li>
-          <li className="link__item"><Link to="/kontakt">Kontakt</Link></li>
+          <li className="link__item"><Link to="/" onClick={()=>setOpen(false)}>Hjem</Link></li>
+          <li className="link__item"><Link to="/hvordan" onClick={()=>setOpen(false)}>Hvordan</Link></li>
+          <li className="link__item"><Link to="/find" onClick={()=>setOpen(false)}>Find os</Link></li>
+          <li className="link__item"><Link to="/omos" onClick={()=>setOpen(false)}>Om os</Link></li>
+          <li className="link__item"><Link to="/kontakt" onClick={()=>setOpen(false)}>Kontakt</Link></li>
         </ul>
       )}
     </div>
