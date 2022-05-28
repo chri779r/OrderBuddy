@@ -1,0 +1,91 @@
+
+
+
+
+.IconsHowContainer {
+display:flex;
+justify-content: center;
+align-items: center;
+margin: 2rem auto 2rem auto;
+flex-direction: column;
+gap:4rem;
+
+
+
+.WrapperHow {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap:1rem;
+
+.IconContainerHow {
+display:flex;
+width:100px;
+height:100px;
+justify-content: center;
+align-items: center;
+
+.ikon_how_container {
+    display: flex;
+
+    .ikon_how_img {
+        width: 15vw;
+        height: 15vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+}
+
+
+.textWrapperHow{
+    text-align: left;
+    width: 33ch;
+}
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+    .IconsHowContainer {
+   
+        margin: 4rem auto 4rem auto;
+
+}
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
+    .IconsHowContainer {
+     flex-direction: row;
+    .WrapperHow {
+
+        .textWrapperHow{
+            width: 30ch;
+        }
+
+}
+}
+}
+
+@media only screen and (min-width: 1440px) {
+
+    .IconsHowContainer {
+        padding: 1.5rem;
+        max-width: 1200px;
+        justify-content: space-between;
+    .WrapperHow {
+
+        .textWrapperHow{
+            width: 38ch;
+        }
+
+}
+}
+}

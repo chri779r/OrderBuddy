@@ -11,11 +11,13 @@
     background-color: var(--champagne) !important;
     color: var(--indigo) !important;
     box-shadow: none !important;
+   
 }
 
 .css-1sxsdsv-MuiTypography-root{
     font-family: "poppins", sans-serif !important;
     font-size: 1rem !important;
+
 }
 .css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
     flex-direction: row-reverse;
@@ -31,3 +33,32 @@
     transform: rotate(180deg);
     
 }
+
+
+
+p{
+    max-width: 50ch;
+}
+
+@media only screen and (min-width: 768px) {
+//streget under teksten
+    .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+        width: 70%;
+        
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    //streget under teksten
+        .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+            width: 40%;
+            
+        }
+    }
+    @media only screen and (min-width: 1440px) {
+        //streget under teksten
+            .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+                width: 30%;
+                
+            }
+        }

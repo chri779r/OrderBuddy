@@ -1,14 +1,16 @@
-
 .IconsWrapper {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    max-width: 75%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem;
+}
+.IconsContainer {
+    display: flex;
+    align-items: flex-start;
     gap: 4rem;
-    align-content: center;
+    margin: 0 auto;
+
+    flex-direction: column;
 }
 
 .Wrapper {
@@ -48,16 +50,18 @@ border-radius:20px 20px 20px 0px;
   
 
           @media (min-width: 768px)  {
-            .IconsWrapper {
+
+
+            .IconsContainer {
                 max-width: 100%;
                 flex-direction: row;
-                align-items: center;
-                margin: 0 1rem;
+                margin: 0 auto;
                 flex-wrap: wrap;
-                padding: 4rem 0;
+                padding: 2rem;
+                justify-content: center;
             }
             .Wrapper {
-                max-width: 330px;
+                max-width: 310px;
                 align-items: flex-start;
             }
            
@@ -71,22 +75,18 @@ border-radius:20px 20px 20px 0px;
         @media (min-width: 1024px)  {
            
 
-            .IconsWrapper {
+            .IconsContainer {
                 margin: 0 auto;
                 max-width: 80%;
             }
             .Wrapper{
                 padding: 1rem;
-                max-width: 339px;
             }
-            .IconContainer {
-                width: 120px;
-                height: 120px;
-            }
+          
         }
  @media (min-width: 1440px)  {
    
-    .IconsWrapper {
+    .IconsContainer {
         max-width: 1240px;
     }
     .Wrapper{

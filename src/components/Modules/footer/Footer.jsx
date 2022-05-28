@@ -3,9 +3,9 @@ import "./Footer.scss"
 
 import { NavLink } from 'react-router-dom'
 import { Logo } from "../logo/logo"
-import { Facebook } from "../icons/icons"
-import { Instagram } from "../icons/icons"
-import { Linkedin } from "../icons/icons"
+import facebook from "../../../assets/facebook.svg"
+import instagram from "../../../assets/instagram.svg"
+import linkedin from "../../../assets/linkedin.svg"
 
 
 export default function Footer() {
@@ -33,9 +33,21 @@ export default function Footer() {
        <div className="some_links">
        <Logo />
        <div className="icon_footer">
-       <Facebook />
-        <Instagram />
-       <Linkedin /> 
+       <div className="icon__container">
+        <figure className="icon__img">
+          <img src={facebook} alt="facebook logo" />
+        </figure>
+    </div>
+    <div className="icon__container">
+        <figure className="icon__img">
+          <img src={instagram} alt="instagram logo" />
+        </figure>
+    </div>
+    <div className="icon__container">
+        <figure className="icon__img">
+          <img src={linkedin} alt="linkedin logo" />
+        </figure>
+    </div>
        </div>
        </div>
    </section>
