@@ -4,7 +4,7 @@ import facebook from "../../../assets/facebook.svg"
  import instagram from "../../../assets/instagram.svg"
   import linkedin from "../../../assets/linkedin.svg"
 
-
+//flyttet over ikke brugt her lengere ma slettes
   import ikonKlok from "../../../assets/klok.svg"
   import ikonKort from "../../../assets/kort.svg"
   import ikonRabat from "../../../assets/rabat.svg"
@@ -14,7 +14,7 @@ import facebook from "../../../assets/facebook.svg"
   import ikonKortHow from "../../../assets/korthow.svg"
   import ikonEye from "../../../assets/eye.svg"
   
-  import iconBtnFaq from "../../../assets/pile.svg"
+
 
   import "./icons.scss"
 
@@ -45,7 +45,7 @@ export function Linkedin(props) {
     </div>
   );
 }
-
+//flyttet over ikke brugt her lengere ma slettes
 // ikoner til main page noter i->K<-on i className
 export function IkonKlok(props) {
   return (
@@ -86,6 +86,8 @@ export function IkonCo(props) {
     </div>
   );
 }
+// ^^^^^ flyttet over ikke brugt her lengere ma slettes^^^^^ 
+
 
 // ikoner til hvordan page noter i->K<-on i className
 export function IkonQr(props) {
