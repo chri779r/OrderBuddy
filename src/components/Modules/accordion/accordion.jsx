@@ -14,7 +14,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div className='faq__wrapper' style= {{maxWidth:"80%", margin:"0 auto", padding:"1rem 0"}}>
+    <div className='faq__wrapper' style= {{maxWidth:"80%", margin:"0 auto", padding:"1rem 0px 4rem 0px"}}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ArrowCircleUpRoundedIcon style={{color:"26045d"}}/>}

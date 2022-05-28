@@ -13,7 +13,8 @@ import './iconsmain.scss'
 const IconMain = () => {
     return(
    
-        <section className="IconsWrapper" >
+        <div className="IconsWrapper" >
+        <div className="IconsContainer" >
         <div className="Wrapper" >
         <div className="IconContainer" >
         <figure className="ikon__img">
@@ -53,7 +54,9 @@ const IconMain = () => {
         <h3>Mindre CO2</h3>           
             <p>Med OrderBuddy får du kvitteringen digitalt og slipper for at skabe unøddigt prints, der alligevel ender i skraldespanden.</p>
         </div>
-        </section>
+        </div>
+        </div>
+ 
     )
 }
 

@@ -12,7 +12,7 @@ export function WhoHero(props){
                 </figure>
                 <div className="hero__info">
                     <h2 className="hero__header">Om OrderBuddy</h2>
-                    <p className="hero__text">Her finder du information omkring virksomheden og dens ejer</p>
+                    <p className="hero__text" style={{maxWidth: "30ch"}}>Her finder du information omkring virksomheden og dens ejer</p>
                 </div>
             </div>
         </section>

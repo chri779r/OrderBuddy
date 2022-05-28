@@ -5,7 +5,7 @@ import ControlledAccordions from '../accordion/accordion'
 export default function FaqCard() {
 
     return(
-        <section className="card__wrapper" style={{backgroundColor:"#fce4d5"}}>
+        <section className="card__container" style={{backgroundColor:"#fce4d5"}}>
             <ControlledAccordions/>
         </section>
     )
