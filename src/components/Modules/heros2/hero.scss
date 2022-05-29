@@ -67,6 +67,7 @@
             padding: 9rem 1.5rem 0 1.5rem;
             justify-content: space-between;
             gap: 1rem;
+            align-items: flex-end;
             .hero_home_figure {
                 min-width: 50vw;
                 margin-bottom: 0;
@@ -74,6 +75,8 @@
                 img {
                     max-height: 50vh;
                     margin-bottom: 0;
+                    
+                    
                 }
             }
     
@@ -84,6 +87,11 @@
                 justify-content: flex-start;
                 gap:1rem;
                 padding-bottom: 2rem;
+
+                     p{
+                        max-width: 28ch;
+                 
+                     }
             } 
         }   
     }
@@ -93,18 +101,28 @@
 @media only screen and (min-width: 1440px) {
     .hero__wrapper{
         .hero__container {
-    .hero__figure {
-        min-width: 50vh;
+//     .hero__figure {
+//         min-width: 50vh;
 
-        img {
-            height: 50vh;
-            max-height: 50vh;
-        }
-}
+//         img {
+//             height: 50vh;
+//             max-height: 50vh;
+//         }
+// }
 .hero__info{
     margin-left: 0;
 }
 }
 }
 
+.hero_home_wrapper{
+    .hero_home_container {
+        align-items: stretch;
+       
+        .hero_home_info p{
+            max-width: 50ch;
+     
+         }
+}
+}
 }
