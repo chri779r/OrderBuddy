@@ -1,4 +1,5 @@
 import React from "react"
+import { NavLink } from 'react-router-dom'
 
 
 import './illuhand.scss'
@@ -30,7 +31,9 @@ const IllustrationHand = () => {
                 <p className="Text">Miljøvenlig</p>
                 </div>
 
-            <Button text="Udforsk"></Button>
+                <NavLink to="/hvordan">
+                <Button text="Udforsk"></Button>
+                </NavLink>
 
             </div>
             </div>

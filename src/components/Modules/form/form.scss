@@ -8,12 +8,13 @@
     flex-direction: column;
     align-items: flex-start;
     max-width: 80vw;
+    width: fit-content;
   }
   
 
   fieldset {
     border: none;
-    margin: 1rem 0;
+    // margin: 1rem 0;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -25,19 +26,19 @@
   
   input,textarea{
     display: block;
-    width: 110%;
-    margin-top: 1rem;
+    width: 35vh;
+    margin-top: 0.5rem;
     appearance: none;
     background-color: var(--champagne);
     border-color: none;
     border-width: 0px;
     border-radius: 10px 10px 10px 0px;
-    padding-top: .5rem;
-    padding-right: .75rem;
-    padding-bottom: .5rem;
-    padding-left: .75rem;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
   }
   
 input:focus{
@@ -144,6 +145,13 @@ select:-webkit-autofill:focus {
     }
 
     @media screen and (min-width: 1024px) {
+      input,textarea{
+        width: 40vh;
+      
+      }
+      .popup {
+        width: 50vw;
+      }
         .popup__info{
         .popup__header{
             line-height: 4rem;

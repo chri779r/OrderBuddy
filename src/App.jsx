@@ -10,6 +10,8 @@ import FindPage from './components/Modules/pages/findos'
 import OmosPage from './components/Modules/pages/omos'
 import KontaktPage from './components/Modules/pages/kontakt'
 
+
+
 function App() {
 
   return (
@@ -22,11 +24,14 @@ function App() {
      <Route path='/find'element={<FindPage />} />
      <Route path='/omos'element={<OmosPage />} />
      <Route path='/kontakt'element={<KontaktPage />} />
-        
+     <Route path='/hvordan/:faq'element={<HvordanPage/>} />
 
      </Routes>
+
      {/* </Switch> */}
      <Footer></Footer>
+   
+ 
     </div>
   )
 }

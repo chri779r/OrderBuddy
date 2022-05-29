@@ -46,19 +46,33 @@ p{
         width: 70%;
         
     }
+    .faq__wrapper{
+        max-width: 60% !important;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
-    //streget under teksten
-        .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-            width: 40%;
-            
+
+   
+ 
+   
+     //streget under teksten
+     .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+        width: 30%; 
+    }
+
+        .faq__wrapper{
+            max-width: 90% !important;
+            margin-top: -15vh !important;
         }
     }
     @media only screen and (min-width: 1440px) {
-        //streget under teksten
-            .css-1elwnq4-MuiPaper-root-MuiAccordion-root {
-                width: 30%;
-                
+       
+
+      
+            .faq__wrapper{
+                max-width: 1200px!important;
+          
             }
+     
         }
