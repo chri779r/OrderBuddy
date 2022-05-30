@@ -11,7 +11,7 @@ import './googleMaps.scss'
         <p className="text">Kan du ikke finde stedet du søger på kortet? Prøv at skrive navnet på den café eller restaurant du søger og se efter resultatet under.</p>
         </div>
         <div className="mapContainer">
-        <iframe className="map" src="https://storage.googleapis.com/maps-solutions-a4wpvqs0s9/locator-plus/o6r5/locator-plus.html"   loading="lazy"></iframe>
+        <iframe className="map" src="https://storage.googleapis.com/maps-solutions-a4wpvqs0s9/locator-plus/scpm/locator-plus.html"   loading="lazy"></iframe>
       </div>
       </div>
       </div>
