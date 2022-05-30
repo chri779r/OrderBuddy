@@ -35,17 +35,23 @@ export default function Footer() {
        <div className="icon_footer">
        <div className="icon__container">
         <figure className="icon__img">
+          <a href="https://m.facebook.com/orderbuddydk/" target="_blank">
           <img src={facebook} alt="facebook logo" />
+          </a>
         </figure>
     </div>
     <div className="icon__container">
         <figure className="icon__img">
+          <a href="https://www.instagram.com/orderbuddy_dk/ "target="_blank">
           <img src={instagram} alt="instagram logo" />
+          </a>
         </figure>
     </div>
     <div className="icon__container">
         <figure className="icon__img">
+        <a href="https://www.linkedin.com/company/orderbuddy-denmark/" target="_blank">
           <img src={linkedin} alt="linkedin logo" />
+      </a>
         </figure>
     </div>
        </div>
