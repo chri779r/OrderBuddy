@@ -14,7 +14,6 @@
 
   fieldset {
     border: none;
-    // margin: 1rem 0;
       padding: 0;
       display: flex;
       flex-direction: column;
@@ -39,6 +38,7 @@
     padding-left: 0.5rem;
     font-size: 1rem;
     line-height: 1.2rem;
+    
   }
   
 input:focus{
@@ -56,6 +56,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border: 1px solid var(--lightGreen);
+  box-shadow:0 0 0px 1000px var(--lightGreen) inset;
   -webkit-text-fill-color: var(--indigo);
   -webkit-box-shadow: 0 0 0px 1000px var(--lightGreen) inset;
   transition: background-color 5000s ease-in-out 0s;
