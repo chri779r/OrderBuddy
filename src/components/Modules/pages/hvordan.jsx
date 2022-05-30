@@ -9,10 +9,8 @@ function HvordanPage(){
       <>
         <HowHero/>
         <IconsHow/>
-        <section id="faq">
         < HowFaq/>
         <FaqCard/>
-        </section>
         </>
 
     )
