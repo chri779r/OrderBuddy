@@ -2,7 +2,10 @@ import React from "react";
 
 import './googleMaps.scss'
 
+
+
   function Map() {
+
     return (
       <div className="wrapper">
           <div className="container">

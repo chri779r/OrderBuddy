@@ -18,7 +18,6 @@
             display: flex;
             flex-direction: column;
             text-align: left;
-            //max-width: 75%;
             gap: 1rem;
             margin: 0 auto;
             color: var(--indigo);
@@ -101,14 +100,7 @@
 @media only screen and (min-width: 1440px) {
     .hero__wrapper{
         .hero__container {
-//     .hero__figure {
-//         min-width: 50vh;
 
-//         img {
-//             height: 50vh;
-//             max-height: 50vh;
-//         }
-// }
 .hero__info{
     margin-left: 0;
 }
