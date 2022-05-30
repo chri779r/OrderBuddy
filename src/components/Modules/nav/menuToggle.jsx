@@ -9,7 +9,7 @@ const Button = styled.div`
 
 const Path = (props) => (
   <motion.path
-    fill="transparent"
+  fill="transparent"
     strokeLinecap="round"
     strokeWidth="3"
     {...props}
@@ -37,7 +37,7 @@ export function MenuToggle({ toggle, isOpen }) {
           animate={isOpen ? "open" : "closed"}
           initial={false}
           variants={{
-            closed: { opacity: 1 },
+            closed: { opacity: 0 },
             open: { opacity: 0 },
           }}
           transition={transition}
