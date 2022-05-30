@@ -5,7 +5,7 @@ import Sonny from "../../../assets/sonny.jpg"
 export default function OmCard3(props){
 
     return(
-        <section className="card__wrapper" style={{display:"flex", flexWrap:"wrap", maxWidth: "1200px"}}>
+        <section className="card__wrapper" style={{display:"flex", flexWrap:"wrap", maxWidth: "1100px"}}>
             <img src={Sonny} alt="Sonny Meyer"/>
             <div className="card__container" >
                 <h3 className="card__header" style={{color:"#26045D"}}>Hovedet bag OrderBuddy</h3>
