@@ -2,9 +2,9 @@ import React from "react";
 import "./nav.scss"
 import { useMediaQuery } from "react-responsive";
 import { Logo } from "../logo/logo"
-import { NavLinks } from "./navLinks";
-import { DeviceSize } from "../responsive";
-import { MobileNavLinks } from "./mobileNavLinks";
+import { NavLinks } from "./NavLinks";
+import { DeviceSize } from "../DeviceSize";
+import { MobileNavLinks } from "./MobileNavLinks";
 
 
 export function Navigation(props) {
