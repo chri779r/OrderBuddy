@@ -2,7 +2,6 @@ import React from 'react'
 import './App.scss'
 import Header from './components/Modules/header/Header'
 import Footer from './components/Modules/footer/Footer'
-
 import { Route, Routes  } from 'react-router-dom'
 import HjemPage from './components/Modules/pages/Hjem'
 import HvordanPage from './components/Modules/pages/hvordan'
