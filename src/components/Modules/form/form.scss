@@ -29,8 +29,7 @@
     margin-top: 0.5rem;
     appearance: none;
     background-color: var(--champagne);
-    border-color: none;
-    border-width: 0px;
+    border: 2px solid var(--champagne);
     border-radius: 10px 10px 10px 0px;
     padding-top: 0.5rem;
     padding-right: 0.5rem;
@@ -39,26 +38,23 @@
     font-size: 1rem;
     line-height: 1.2rem;
     
-  }
-  
-input:focus{
-    background-color: var(--lightGreen);
-    border-color: none;
-    border-width: 0px;
 }
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
+input:hover, 
 input:-webkit-autofill:focus,
+input:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
+textarea:hover,
 textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: 1px solid var(--lightGreen);
-  box-shadow:0 0 0px 1000px var(--lightGreen) inset;
+textarea:focus
+ {
+  border: 2px solid var(--indigo);
+  box-shadow:0 0 0px 100px var(--lightGreen) inset;
   -webkit-text-fill-color: var(--indigo);
-  -webkit-box-shadow: 0 0 0px 1000px var(--lightGreen) inset;
+  -webkit-box-shadow: 0 0 0px 100px var(--lightGreen) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
   .form-required-message {
@@ -68,15 +64,22 @@ select:-webkit-autofill:focus {
   
   input[data-touched="true"],
   textarea[data-touched="true"] {
+    &:valid {
+      background-color: var(--lightGreen);
+      border: 2px solid var(--lightGreen);
+    }
     &:invalid {
       border: 2px solid #ff0000;
       & ~ .form-required-message {
         color: #ff0000;
         padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         visibility: visible;
       }
     }
   }
+
+ 
   
   
 //popup 
