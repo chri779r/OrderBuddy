@@ -25,8 +25,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+            OrderBuddy har samarbejde med en række samarbejdspartnere. Du kan finde dem under find os, hvor du både kan se det på et kort eller som en liste under. 
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -36,12 +35,11 @@ export default function ControlledAccordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvad sker der med min data?</Typography>
+          <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Skal jeg downloade en app?</Typography>
         </AccordionSummary>
         <AccordionDetails>
             <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
-                Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                Aliquam eget maximus est, id dignissim quam.
+                Det korte svar er nej! Det vigtigste for OrderBuddy er, at du hurtigt og nemt kan bestille. Derfor er OrderBuddy lavet som en webapp, der er tilgængelig for alle.
             </Typography>
         </AccordionDetails>
       </Accordion>
@@ -55,8 +53,7 @@ export default function ControlledAccordions() {
         </AccordionSummary>
         <AccordionDetails>
             <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+            OrderBuddy logger ingen data. Af samme årsag kræver det ingen brugeroprettelse. Du forbliver anonym gennem hele processen.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -66,12 +63,11 @@ export default function ControlledAccordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvad sker der med min data?</Typography>
+          <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvor får jeg min kvittering?</Typography>
         </AccordionSummary>
         <AccordionDetails>
         <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+            OrderBuddy fører an i kampen mod en overflod af print. Derfor tilbyder vi muligheden for, at du kan få kvitteringen sendt som mail.
           </Typography>
         </AccordionDetails>
       </Accordion>
