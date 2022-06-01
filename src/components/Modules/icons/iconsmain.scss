@@ -1,103 +1,67 @@
-.IconsWrapper {
+.icon__wrapper {
     display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 2rem;
-}
-.IconsContainer {
-    display: flex;
-    align-items: flex-start;
-    gap: 4rem;
-    margin: 0 auto;
-
     flex-direction: column;
-}
+    margin: 1rem;
 
-.Wrapper {
-display:flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-gap:1rem;
-text-align: left;
-align-items: flex-start;
-}
-.Wrapper p{
-    width: 33ch;
-}
-.IconContainer {
-display:flex;
-padding: 1.5rem;
-width:100px;
-height:100px;
-justify-content: center;
-align-items: center;
-background-color: var(--lilac);
-border-radius:20px 20px 20px 0px;
-}
+    .icon__container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 1em 2rem;
 
-.ikon__img {
-     width: 20vw;
-     height: 20vh;
-   }
+        .icon__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem auto;
+            padding: 1rem;
+            height: 6rem;
+            width: 8rem;
+            background-color: var(--lilac);
+            border-radius: 10px 10px 10px 0%;
 
-        img {
-            width: 100%;
-            height: 100%;
-          }
-  
-
-  
-
-          @media (min-width: 768px)  {
-
-
-            .IconsContainer {
-                max-width: 100%;
-                flex-direction: row;
-                margin: 0 auto;
-                flex-wrap: wrap;
-                padding: 2rem;
-                justify-content: center;
+            figure{
+                height: 90%;
+                width: 90%;
             }
-            .Wrapper {
-                max-width: 310px;
-                align-items: flex-start;
-            }
-           
-            .ikon__img {
-                width: 7vw;
-                height: 7vh;
-              }
-          
         }
 
-        @media (min-width: 1024px)  {
-           
-
-            .IconsContainer {
-                margin: 0 auto;
-                max-width: 80%;
-            }
-            .Wrapper{
-                padding: 1rem;
-            }
-          
+        .icon__info{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: left;
+            color: var(--indigo);
+            max-width: 40ch;
         }
- @media (min-width: 1440px)  {
-   
-    .IconsContainer {
-        max-width: 1280px;
-        gap: 1rem;
     }
-    .Wrapper{
-        max-width: 400px;
-        padding: 3rem;
-    }
- }
+}
 
+@media only screen and (min-width: 1024px) {
+    .icon__wrapper {
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        gap: 1em 1em; 
+        grid-template-areas: 
+          "div1 div2"
+          "div3 div4"
+          ". . ";
+      }
+      div:nth-child(1) { grid-area: div1; }
+      div:nth-child(2) { grid-area: div2; }
+      div:nth-child(3) { grid-area: div3; }
+      div:nth-child(4) { grid-area: div4; }
 
-
+      .icon__container {
+        .icon__img {
+            width: 10rem !important;
+            height: 8rem !important;
+        }
+      }
+      
+}
 
 
 
