@@ -1,194 +1,141 @@
 .ItemWrapper{
-display: grid;
-background-color: var(--champagne);
-padding-top: 2rem;
-
-}
-
-.BgIllu{
-    display: flex;
-background-image: url(./hand.svg);
-background-position: right;
-background-size: 80vw 130vh;
-    width: 100vw;
-    height: 70vh;
-    padding-top: 12rem;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        background-origin: content-box;
-        grid-column: 1;
-        grid-row: 1;
-}
-
-.TextWrapper{
-    display: flex;
-flex-direction: column;
-gap:1rem;
-align-items: center;
-justify-content: flex-start;
-height: fit-content;
-grid-column: 1;
-  grid-row: 1;
-
-}
-
-
-.TextContainer {
-background-color: var(--darkGreen);
-width:35vw;
-height:4rem;
-
-display: flex;
-align-items: center;
-justify-content: center;
-text-align: center;
-border-radius: 10px 10px 10px 0%;
-}
-
-
-.Text {
- padding:0.5rem;
-}
-//Glaxy Fold
-@media screen and (width: 280px) {
-
+    background-color: var(--champagne);
+    padding-top: 2rem;
+    overflow: hidden;
+    
     .BgIllu{
+        // position: relative;
         height: 60vh;
-        padding-top: 23vh;
-    } 
-    .TextWrapper {
-        gap: 1rem;
-        padding-top: 1rem;
-    }
-    .TextContainer {
-        height: 3rem;
-    }
+        width: 100vw;
+        display: flex;
 
-    p {
-        font-size: 0.7rem !important;
-        line-height: 1rem !important;
-    }
-    .btn{
-        padding: 0.5em 0.7em;
-        font-size: 0.7rem !important;
-        height: 2em !important;
-        border-radius: 10px 10px 10px 0px !important ;
-        margin: 0 !important;
-    }
-}
-
-@media screen and (min-width: 360px) {
-    .BgIllu{
-        height: 70vh;
-        // padding-top: 10vh;
-
-    } 
-}
-
-
-@media screen and (min-width: 390px) {
-    .BgIllu{
-        height: 75vh;
-        padding-top: 3vh;
-
-    }
-}
-//Surface Duo
-@media screen and (min-width: 540px) {
-    .TextWrapper {
-        gap: 2rem;
-        padding-top: 1rem;
-    }
-    .BgIllu {
-        height: 100vh;
-        padding-top: 5rem;
-    }
-}
-
-@media screen and (min-width: 728px) {
-
-
-
-        .TextWrapper {
-            gap: 2rem;
-            padding-top: 4rem;
+        img {
+            height: 115%;
+            width: 110%;
         }
-    
-    .BgIllu {
-        height: 95vh;
-        padding-top: 10rem;
-    }
-    .TextContainer {
-        height: 6rem;
-    
-    }
 
-}
+        a {
+            position: absolute;
+            right: calc(0% + 20px) ;
 
-@media screen and (min-width: 912px) {
-
-
-.BgIllu {
-    height: 95vh;
-    padding-top: 0rem;
-}
-
-}
-//Nest Hub
-@media screen and (min-width: 1024px) {
-
-
-    .BgIllu {
-        height: 116vh;
-        padding-top: 12rem;
-        background-size: 45vw 114vh;
-    }
-
-    .TextWrapper {
-        width: 50vw;
-        padding-left: 72vw;
-        padding-top: 0rem;
-    }
-    .TextContainer {
-        width: 16vw;
-        height: 5rem;
-    }
-    //ipad pro
-    @media screen and (height: 1366px) {
-        .BgIllu {
-            height: 50vh;}
-
-    }
-    }
-    //Nest Hub Max
-    @media screen and (min-width: 1280px) {
-
-
-        .BgIllu {
-            padding-top: 8rem;    
-        }
-        .TextWrapper {
-            padding-top: 4rem;
         }
     }
+}
 
 
-    @media screen and (min-width: 20240px) {
 
-        .BgIllu {
-            height: 80vh;
-            background-size: 32vw 85vh;
-        }
-        .TextContainer {
-            height: 8rem !important;
-        }
-        .TextWrapper {
-            padding-top: 8rem;
-        }
-      
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .BgIllu{
+//     display: flex;
+// background-image: url(./hand.svg);
+// background-position: right;
+// background-size: 80vw 130vh;
+//     width: 100vw;
+//     height: 70vh;
+//     padding-top: 12rem;
+//         object-fit: cover;
+//         background-repeat: no-repeat;
+//         -webkit-box-pack: center;
+//         -webkit-justify-content: center;
+//         -ms-flex-pack: center;
+//         justify-content: center;
+//         background-origin: content-box;
+//         grid-column: 1;
+//         grid-row: 1;
+// }
+
+// .TextWrapper{
+//     display: flex;
+// flex-direction: column;
+// gap:1rem;
+// align-items: center;
+// justify-content: flex-start;
+// height: fit-content;
+// grid-column: 1;
+//   grid-row: 1;
+
+// }
+
+
+// .TextContainer {
+// background-color: var(--darkGreen);
+// width:35vw;
+// height:4rem;
+
+// display: flex;
+// align-items: center;
+// justify-content: center;
+// text-align: center;
+// border-radius: 10px 10px 10px 0%;
+// }
+
+
+// .Text {
+//  padding:0.5rem;
+// }
+
+// @media screen and (min-width: 1024px) {
+
+
+//     .BgIllu {
+//         height: 60vh;
+//         padding-top: 12rem;
+//         background-size: 45vw 70vh;
+//     }
+
+//     .TextWrapper {
+//         width: 50vw;
+//         padding-left: 73vw;
+//         gap: 2rem;
+//     }
+//     .TextContainer {
+//         width: 16vw;
+//         max-width: 250px;
+//         height: 5rem;
+//     }
+//     //ipad pro
+//     @media screen and (height: 1366px) {
+//         .BgIllu {
+//             height: 50vh;}
+
+//     }
+//     }
+//     //Nest Hub Max
+//     @media screen and (min-width: 1280px) {
+
+
+//         .BgIllu {
+//             padding-top: 8rem;    
+//         }
+//     }
 
