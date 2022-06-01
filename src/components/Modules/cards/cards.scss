@@ -1,10 +1,11 @@
 .card__wrapper {
     display: flex;
-    // margin: 1rem 0;
     justify-content: center;
+    align-items: center;
  
     img{
         width: 50%;
+        height: 50%;
         margin:auto;
         margin-top: 2rem;
     }
@@ -33,24 +34,19 @@
 @media only screen and (min-width: 1024px) {
 
     .card__wrapper {
-       
-
-  
         img{
-            width: 30%;
+            flex: 1;
             margin: 0 ;
             padding: 2rem;
         }
-    .card__container {
-        max-width: 80%;
-        justify-content: flex-start;
+        
+        .card__container {
+            flex:2;
+            justify-content: flex-start;
             align-items: flex-start;
-            margin: 0;
-        // margin-left: 2rem;
         .card__text {
-            max-width: 65ch;
+            max-width: 100%;
         }
-    
     }
 
     .card_home_container {
@@ -59,18 +55,6 @@
         margin-left: 2rem;
         padding-top:0;
         margin-top: -40vh;
-
-       
     }
-    }
-
-     //ipad pro
-     @media screen and (height: 1366px) {
-        .card__wrapper {
-            .card_home_container {
-                margin-top: -10vh;
-            }
-        }
-
     }
 }
