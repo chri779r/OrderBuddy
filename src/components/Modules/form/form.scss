@@ -1,164 +1,163 @@
-
 .container {
-    margin: 0 auto;
-    padding-top: 2rem;
-    padding-bottom: 5rem;
-    color: var(--indigo);
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  color: var(--indigo);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 80vw;
+  width: fit-content;
+}
+
+
+fieldset {
+  border: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 80vw;
-    width: fit-content;
-  }
-  
-
-  fieldset {
-    border: none;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      max-width: 70vw;
-  }
-  
-  
-  
-  input,textarea{
-    display: block;
-    width: 35vh;
-    margin-top: 0.5rem;
-    appearance: none;
-    background-color: var(--champagne);
-    border-color: none;
-    border-width: 0px;
-    border-radius: 10px 10px 10px 0px;
-    padding-top: 0.5rem;
-    padding-right: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    
-  }
-  
-input:focus{
-    background-color: var(--lightGreen);
-    border-color: none;
-    border-width: 0px;
+    max-width: 70vw;
 }
+
+
+
+input,textarea{
+  display: block;
+  width: 35vh;
+  margin-top: 0.5rem;
+  appearance: none;
+  background-color: var(--champagne);
+  border: 2px solid var(--champagne);
+  border-radius: 10px 10px 10px 0px;
+  padding-top: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
+input:hover, 
 input:-webkit-autofill:focus,
+input:focus,
 textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
+textarea:hover,
 textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  border: 1px solid var(--lightGreen);
-  box-shadow:0 0 0px 1000px var(--lightGreen) inset;
-  -webkit-text-fill-color: var(--indigo);
-  -webkit-box-shadow: 0 0 0px 1000px var(--lightGreen) inset;
-  transition: background-color 5000s ease-in-out 0s;
+textarea:focus
+{
+border: 2px solid var(--indigo);
+box-shadow:0 0 0px 100px var(--lightGreen) inset;
+-webkit-text-fill-color: var(--indigo);
+-webkit-box-shadow: 0 0 0px 100px var(--lightGreen) inset;
+transition: background-color 5000s ease-in-out 0s;
 }
-  .form-required-message {
-    visibility: hidden;
-    font-family: sans-serif;
+.form-required-message {
+  visibility: hidden;
+  font-family: sans-serif;
+}
+
+input[data-touched="true"],
+textarea[data-touched="true"] {
+  &:valid {
+    background-color: var(--lightGreen);
+    border: 2px solid var(--lightGreen);
   }
-  
-  input[data-touched="true"],
-  textarea[data-touched="true"] {
-    &:invalid {
-      border: 2px solid #ff0000;
-      & ~ .form-required-message {
-        color: #ff0000;
-        padding-top: 0.5rem;
-        visibility: visible;
-      }
+  &:invalid {
+    border: 2px solid #ff0000;
+    & ~ .form-required-message {
+      color: #ff0000;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      visibility: visible;
     }
   }
-  
-  
+}
+
+
+
+
 //popup 
 .popup-overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 99;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--champagne);
+  border-radius: 14px;
+  padding: 20px 30px;
+  max-width: 75%;
+  width: calc(100% - 20px);
+  border-radius:  20px 20px 20px 0px;
+  min-height: 300px;
+}
+
+
+.close-popup {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  margin: 0.5rem;
+  background-color: transparent;
+  border: none;
+  background-image: url(../../../assets/kryds_popup.svg);
+}
+
+
+
+  .popup__figure img {
+      width: 100%;
+      height: 30vh;
+      margin:1rem auto;
   }
-  
-  .popup {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: fixed;
-    z-index: 999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--champagne);
-    border-radius: 14px;
-    padding: 20px 30px;
-    max-width: 75%;
-    width: calc(100% - 20px);
-    border-radius:  20px 20px 20px 0px;
-    min-height: 300px;
-  }
-  
 
-  .close-popup {
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    margin: 0.5rem;
-    background-color: transparent;
-    border: none;
-    background-image: url(../../../assets/kryds_popup.svg);
-  }
-  
-  
-  
-    .popup__figure img {
-        width: 100%;
-        height: 30vh;
-        margin:1rem auto;
-    }
+  .popup__info{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-align: left;
+      max-width: 100%;
+      margin: 1rem auto;
+      color: var(--indigo);
 
-    .popup__info{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        text-align: left;
-        max-width: 100%;
-        margin: 1rem auto;
-        color: var(--indigo);
-
-        .popup__header{
-            line-height: 3rem;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-      input,textarea{
-        width: 40vh;
-      
+      .popup__header{
+          line-height: 3rem;
       }
-      .popup {
-        width: 50vw;
-      }
-        .popup__info{
-        .popup__header{
-            line-height: 4rem;
-        }
-        }
-    }
-    
-    
+  }
 
+  @media screen and (min-width: 1024px) {
+    input,textarea{
+      width: 40vh;
+    
+    }
+    .popup {
+      width: 50vw;
+    }
+      .popup__info{
+      .popup__header{
+          line-height: 4rem;
+      }
+      }
+  }

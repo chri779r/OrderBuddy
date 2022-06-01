@@ -1,4 +1,7 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useRef } from "react";
+
+import emailjs from '@emailjs/browser';
+
 import './form.scss'
 import '../button/button.scss'
 import {Popup} from './popup'
@@ -25,12 +28,7 @@ function useTouchedFields() {
       onBlur: setFieldTouched,   
     })
 
-    // function showPopup() {
-    //     if( setTouchedFields({ all: true })  ){
-            
-    //     } 
-        
-    // }
+  
     return [bindField, setAllFieldsTouched, ]
   }
   
@@ -38,27 +36,32 @@ function useTouchedFields() {
     const [bindField, setAllFieldsTouched] = useTouchedFields()
 
     const [visiblePopup, setVisiblePopup] = React.useState(false);
+
+      const form = useRef();
     
+      const sendEmail = (e) => {
+        e.preventDefault();
+       
+        emailjs.sendForm('service_1z6kqzj', 'template_po9k1ii', form.current, 'w1YsrPXCPpZFE__Pz')
+          .then((result) => {
+              console.log(result.text);
+              setVisiblePopup( !visiblePopup)
+          }, (error) => {
+              console.log(error.text);
+          });
+      };
     return (
         <Fragment>
-      <form className="container"
-        onSubmit = {(event) => {
-          event.preventDefault()
-          const formData = new FormData(event.target)
-          const data = Object.fromEntries(formData.entries())
-          console.log(data) 
-          setVisiblePopup( !visiblePopup)
-        }}
-      >
+              <form  className="container" ref={form} onSubmit={sendEmail}>
         <fieldset>
-          <label htmlFor="name">Navn</label>
+          <label htmlFor="from_name">Navn</label>
           <input 
-            id="name" 
-            name="name" 
+            id="from_name" 
+            name="from_name" 
             type="text"           
       
 
-            {...bindField("name")}
+            {...bindField("from_name")}
             required
             />
           <div className="form-required-message">Et navn er påkrævet.</div>
@@ -75,19 +78,6 @@ function useTouchedFields() {
             required  
           />
           <div className="form-required-message">Der kræves en gyldig e-mail.</div>
-        </fieldset>
-        <fieldset>
-          <label htmlFor="tel">Mobil</label>
-          <input 
-            id="tel" 
-            name="tel" 
-            type="tel" 
-            pattern="[0-9]{8}"
-                          
-            {...bindField("tel")}
-            required 
-          />
-          <div className="form-required-message">Et gyldigt telefonnummer er påkrævet.</div>
         </fieldset>
         <fieldset>
           <label htmlFor="message">Besked</label>
