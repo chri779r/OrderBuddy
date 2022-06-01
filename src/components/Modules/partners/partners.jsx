@@ -6,7 +6,7 @@ import "./partners.scss"
     const [partners, setpartners] = useState([]);
     
     async function initpartners() {
-        await fetch(`/src/assets/partner.json`, {mode:"cors", credentials:"include", headers:{"Content-Type":"application/json"}})
+        await fetch(`./assets/partner.json`, {mode:"cors", credentials:"include", headers:{"Content-Type":"application/json"}})
             .then(response => response.json())
             .then(response => {
                 console.log(response)
@@ -27,7 +27,7 @@ import "./partners.scss"
                 <div key={i} className="partner__card">
                     {/* <h3>{partner.name}</h3>
                     <h1>{partner.type}</h1> */}
-                    <img src={`/src/assets/${partner.name}.png`} alt="partner logo" />
+                    <img src={`./assets/${partner.name}.png`} alt="partner logo" />
                 </div>
                 )}
                 </div>

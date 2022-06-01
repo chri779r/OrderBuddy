@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { MenuToggle } from "./menuToggle";
+import { MenuToggle } from "./MenuToggle";
 import { Link } from 'react-router-dom';
 import "./mobileNavLinks.scss";
 
