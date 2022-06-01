@@ -16,29 +16,27 @@
       gap: 2rem;
       display: flex;
       flex-direction: column;
+
+      .vigtige_links {
+        text-align: left;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+        .footer_link_container{
+            line-height: 2rem;
+        }
+            .footer_link_item{
+                list-style: none;
+                a {
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: inherit;
+                    font-weight:200;              
+                }  
+             }
   }
-            .vigtige_links {
-                text-align: left;
-                gap: 1rem;
-                display: flex;
-                flex-direction: column;
-            }
-                .footer_link_container{
-                    line-height: 2rem;
-                }
-                    .footer_link_item{
-                        list-style: none;
-                        a {
-                            cursor: pointer;
-                            text-decoration: none;
-                            color: inherit;
-                            font-weight:200;
-                                    
-                        }  
-                     }
-                 
-           
-    
+            
             .kontakt{
                 text-align: left;
                 display: flex;
@@ -59,23 +57,25 @@
                          .logo__img {
                             width: auto;
                             height: 50px;
-                         }   
-                      }
-               
-             }  
-             .icon__container {
-                display: flex;
-            
-                .icon__img {
-                    width: 30px;
-                    height: 30px;
-            
-                    img {
-                        width: 100%;
-                        height: 100%;
-                      }
-                }
-            }
+                         }  
+                         
+                         .icon__container__footer {
+                            display: flex;
+                        
+                            .icon__img {
+                                width: 30px;
+                                height: 30px;
+                        
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                  }
+                            }
+                        }
+                      } 
+             }
+
+             
 
 
 
@@ -96,12 +96,33 @@
                         .footer_link_item{
                             transition: all 220ms ease-in-out;
 
-                              a {
-                                                
-                                &:hover {
-                                    font-weight: 900;
+                            a {
+                                position: relative;
+                                text-decoration: none;
+                                font-family: 'Roboto', sans-serif;
+                                color: var(--white);
+                                
+                                &:after {
+                                    content: "";
+                                    width: 100%;
+                                    height: 2px;
+                                    background-color: var(--lightGreen);
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: -2px;
+                                    transform: scaleX(0);
+                                    transform-origin: right;
+                                    transition: transform 0.5s ease;
+                
                                 }
-                             }    
+                
+                                &:hover {
+                                    &:after {
+                                        transform-origin: left;
+                                        transform: scaleX(1);
+                                    }
+                                }
+                            }    
                         }
                     }
                 }
