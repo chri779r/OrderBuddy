@@ -8,17 +8,21 @@ import styled from "styled-components";
 
 const About__wrapper = styled.section`
 
-&:nth-child(2) {
-  background-color: #FCE4D5;
-}
-
   @media (min-width: 1024px){
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction:row;
-    justify-content: center;
-    align-items: start;
-    padding: 2rem 0;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+      "div1 div2"
+      ". ."; 
+      align-items: start;
+      margin: auto;
+  }
+  .div1 { grid-area: div1; }
+  .div2 { grid-area: div2; }
+  max-width: 1200px;
+
 
     &:nth-child(2) {
       background-color: #fff;
