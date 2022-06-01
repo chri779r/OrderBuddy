@@ -41,7 +41,7 @@ grid-column: 1;
 background-color: var(--darkGreen);
 width:35vw;
 height:4rem;
-
+max-width: 200px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -129,23 +129,14 @@ border-radius: 10px 10px 10px 0%;
 
 }
 
-@media screen and (min-width: 912px) {
-
-
-.BgIllu {
-    height: 95vh;
-    padding-top: 0rem;
-}
-
-}
 //Nest Hub
 @media screen and (min-width: 1024px) {
 
 
     .BgIllu {
-        height: 116vh;
+        height: 55vh;
         padding-top: 12rem;
-        background-size: 45vw 114vh;
+        background-size: 45vw 70vh;
     }
 
     .TextWrapper {
@@ -157,38 +148,20 @@ border-radius: 10px 10px 10px 0%;
         width: 16vw;
         height: 5rem;
     }
+    
+    
     //ipad pro
-    @media screen and (height: 1366px) {
+    @media screen and (min-width: 1366px) {
         .BgIllu {
-            height: 50vh;}
-
-    }
-    }
-    //Nest Hub Max
-    @media screen and (min-width: 1280px) {
-
-
-        .BgIllu {
-            padding-top: 8rem;    
+            height: 55vh;
         }
+
         .TextWrapper {
-            padding-top: 4rem;
+            width: 50vw;
+            padding-left: 75vw;
+            padding-top: 0rem;
         }
+
     }
-
-
-    @media screen and (min-width: 20240px) {
-
-        .BgIllu {
-            height: 80vh;
-            background-size: 32vw 85vh;
-        }
-        .TextContainer {
-            height: 8rem !important;
-        }
-        .TextWrapper {
-            padding-top: 8rem;
-        }
-      
     }
 
