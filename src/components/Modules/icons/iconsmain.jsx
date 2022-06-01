@@ -13,7 +13,7 @@ import './iconsmain.scss'
 const IconMain = () => {
     return(
     <>
-        <section className="icon__wrapper">
+        <section className="main__icon__wrapper">
             <div className="icon__container">
                 <div className="icon__img">
                     <figure>

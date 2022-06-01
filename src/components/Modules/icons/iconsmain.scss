@@ -1,4 +1,4 @@
-.icon__wrapper {
+.main__icon__wrapper {
     display: flex;
     flex-direction: column;
     margin: 1rem;
@@ -22,8 +22,11 @@
             border-radius: 10px 10px 10px 0%;
 
             figure{
-                height: 90%;
-                width: 90%;
+                img{
+                    height: 80%;
+                    width: 80%;
+                }
+                
             }
         }
 
@@ -39,7 +42,7 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .icon__wrapper {
+    .main__icon__wrapper {
         display: grid; 
         grid-template-columns: 1fr 1fr; 
         grid-template-rows: 1fr 1fr; 
