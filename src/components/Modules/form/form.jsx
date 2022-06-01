@@ -1,4 +1,4 @@
-import React, { Fragment,useRef } from "react";
+import React, { Fragment,useRef,useState } from "react";
 
 import emailjs from '@emailjs/browser';
 
@@ -6,7 +6,7 @@ import './form.scss'
 import '../button/button.scss'
 import {Popup} from './popup'
 
-const { useState } = React
+
 
 
 function useTouchedFields() {
@@ -24,8 +24,10 @@ function useTouchedFields() {
     }
     
     const bindField = (fieldName) => ({
+      
       "data-touched": touchedFields.all || touchedFields[fieldName],
       onBlur: setFieldTouched,   
+      
     })
 
   
@@ -33,9 +35,9 @@ function useTouchedFields() {
   }
   
   const ContactForm = () => {
-    const [bindField, setAllFieldsTouched] = useTouchedFields()
+    const [bindField, setAllFieldsTouched] = useTouchedFields();
 
-    const [visiblePopup, setVisiblePopup] = React.useState(false);
+    const [visiblePopup, setVisiblePopup] = useState(false);
 
       const form = useRef();
     
@@ -58,9 +60,9 @@ function useTouchedFields() {
           <input 
             id="from_name" 
             name="from_name" 
-            type="text"           
+            type="text" 
+            pattern="[^0-9]*"          
       
-
             {...bindField("from_name")}
             required
             />
@@ -73,7 +75,6 @@ function useTouchedFields() {
             name="email" 
             type="email" 
         
-
             {...bindField("email")}
             required  
           />
