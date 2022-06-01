@@ -14,7 +14,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <div className='faq__wrapper' style= {{maxWidth:"80%", margin:"0 auto", padding:"1rem 0px 4rem 0px"}}>
+    <div className='faq__wrapper' style= {{maxWidth:"90%", margin:"0 auto", padding:"1rem 0px 4rem 0px"}}>
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <AccordionSummary
           expandIcon={<ArrowCircleUpRoundedIcon style={{color:"26045d"}}/>}
@@ -22,7 +22,6 @@ export default function ControlledAccordions() {
           id="panel1bh-header"
         >
           <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvor kan jeg bruge OrderBuddy?</Typography>
-          {/* <Typography sx={{ color: "#26045d", fontSize:"0.9rem" }}>Hvor kan jeg bruge OrderBuddy?</Typography> */}
         </AccordionSummary>
         <AccordionDetails>
           <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
@@ -38,7 +37,6 @@ export default function ControlledAccordions() {
           id="panel2bh-header"
         >
           <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvad sker der med min data?</Typography>
-          {/* <Typography sx={{ color: "#26045d", fontSize:"0.9rem" }}>Hvad sker der med min data?</Typography> */}
         </AccordionSummary>
         <AccordionDetails>
             <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
@@ -54,7 +52,6 @@ export default function ControlledAccordions() {
           id="panel3bh-header"
         >
           <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvad sker der med min data?</Typography>
-          {/* <Typography sx={{ color: "#26045d", fontSize:"0.9rem" }}>Spørgsmål 3</Typography> */}
         </AccordionSummary>
         <AccordionDetails>
             <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>
@@ -70,7 +67,6 @@ export default function ControlledAccordions() {
           id="panel4bh-header"
         >
           <Typography sx={{ width: '100%', flexShrink: 0, textAlign:"left" }}>Hvad sker der med min data?</Typography>
-          {/* <Typography sx={{ color: "#26045d", fontSize:"0.9rem" }}>Spørgsmål 4</Typography> */}
         </AccordionSummary>
         <AccordionDetails>
         <Typography sx={{ width: '100%', flexShrink: 0, display:"flex", textAlign:"left", }}>

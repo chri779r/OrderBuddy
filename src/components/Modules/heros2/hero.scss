@@ -52,9 +52,12 @@
             .hero__info {
                 display: flex;
                 justify-content: center;
-                max-width: 40%;
                 justify-content: flex-start;
                 gap:1rem;
+
+                .hero__header {
+                    max-width: 50%;
+                }
             } 
         }   
     }
