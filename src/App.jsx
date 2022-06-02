@@ -8,10 +8,7 @@ import HvordanPage from './components/Modules/pages/HvordanPage'
 import FindPage from './components/Modules/pages/FindPage'
 import OmosPage from './components/Modules/pages/OmosPage'
 import KontaktPage from './components/Modules/pages/KontaktPage'
-
-//import IconsHow from './components/Modules/icons/iconshow'
 import { HowFaq } from './components/Modules/heros2/heroFaq'
-import FaqCard from './components/Modules/cards/faqCard'
 
 import ScrollToTop from './ScrollToTop'
 
@@ -22,27 +19,14 @@ function App() {
       <Header></Header>
       <ScrollToTop/>
       <Routes>
-  
-      {/* <Switch> */}
      <Route path='/'element={<HjemPage />} />
      <Route path='/hvordan'element={<HvordanPage />} />
      <Route path='/find'element={<FindPage />} />
      <Route path='/omos'element={<OmosPage />} />
      <Route path='/kontakt'element={<KontaktPage />} />
-     <Route path='/faq'element={(
-<>
-< HowFaq/>
-<FaqCard/>
-</>
-     )} />
-     
-
+     <Route path='/faq'element={( <>< HowFaq/> </> )} />
      </Routes>
-
-     {/* </Switch> */}
      <Footer></Footer>
-   
- 
     </div>
   )
 }

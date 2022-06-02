@@ -47,7 +47,7 @@
                     }
                 }
 
-                &:active {
+                &:active, &.active {
                     &::after {
                         background-color: var(--darkGreen);
                     }
