@@ -1,7 +1,7 @@
 import "./Footer.scss"
 
 
-import { NavLink } from 'react-router-dom'
+import { NavLink,Link } from 'react-router-dom'
 import { Logo } from "../logo/logo"
 import facebook from "../../../assets/facebook.svg"
 import instagram from "../../../assets/instagram.svg"
@@ -17,7 +17,7 @@ export default function Footer() {
     <ul className="footer_link_container">
          <li className="footer_link_item"><NavLink to="/omos">Om os</NavLink></li>
          <li className="footer_link_item"><NavLink to="/find">Find os</NavLink></li>
-         <li className="footer_link_item"><NavLink  to="/faq">FAQ</NavLink></li>
+         <li className="footer_link_item"><NavLink to="/faq">FAQ</NavLink></li>
          <li className="footer_link_item"><NavLink to="/kontakt">Kontakt</NavLink></li>
      </ul>
        </div>
