@@ -10,6 +10,7 @@ import linkedin from "../../../assets/linkedin.svg"
 export default function Footer() {
 
     return (
+      <>
    <section className="footer">
        <div className="footer_container">
        <div className="vigtige_links">
@@ -57,5 +58,6 @@ export default function Footer() {
        </div>
        </div>
    </section>
+   </>
     )
   }
