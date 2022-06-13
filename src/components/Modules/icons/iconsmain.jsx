@@ -33,8 +33,8 @@ const IconMain = () => {
                     </figure>
                 </div>
                 <div className="icon__info">
-                    <h3>Mindre CO2</h3>
-                    <p>Med OrderBuddy får du kvitteringen digitalt og slipper for at skabe unøddigt prints, der alligevel ender i skraldespanden.</p>
+                    <h3>Bestil og betal lige når du ønsker</h3>
+                    <p>Læn dig tilbage, nyd selskabet og bestil og betal når du er klar, køkkenet og baren modtager din bestilling direkte</p>
                 </div>
             </div>
 

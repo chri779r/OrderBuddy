@@ -25,9 +25,7 @@ import "./partners.scss"
                 <div className="partner__container">
                 {partners.map((partner, i) =>
                 <div key={i} className="partner__card">
-                    {/* <h3>{partner.name}</h3>
-                    <h1>{partner.type}</h1> */}
-                    <img src={`./assets/${partner.name}.png`} alt="partner logo" />
+                    <img src={`./assets/${partner.name}.webp`} alt="partner logo" />
                 </div>
                 )}
                 </div>

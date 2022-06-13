@@ -8,11 +8,13 @@
         padding: 9rem 2rem 2rem 2rem;
         margin: 0 auto;
     
-        .hero__figure img, .hero_home_figure img {
-            width: 100%;
-            max-height: 30vh;
-            margin-bottom: 2rem;
-        }
+        .hero__figure img, .hero_home_figure {
+            img {
+                width: 100%;
+                max-height: 30vh;
+                margin-bottom: 2rem;
+            }
+        } 
     
         .hero__info, .hero_home_info{
             display: flex;
